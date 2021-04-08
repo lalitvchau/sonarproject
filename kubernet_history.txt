@@ -1,0 +1,68 @@
+    1  gcloud container clusters get-credentials prod --zone us-central1-c --project gifted-monitor-309808
+    2  kubectl get nodes
+    3  kubectl get prods
+    4  kubectl get pods
+    5  kubectl cluster-info
+    6  gcloud container clusters get-credentials prod --zone us-central1-c --project gifted-monitor-309808
+    7  kubectl run testpod --image tomcat:8
+    8  kubectl get pods
+    9  kubectl run cenpod --image centos --command sleep 600
+   10  kubectl get pods
+   11  kubectl run cenpod --image centos --command sleep 600
+   12  kubectl get pods
+   13  kubectl get pods -o wide
+   14  kubectl exec -it testpod --command /bin/bash
+   15  kubectl exec -it testpod /bin/bash
+   16  kubectl descibe pod testpod
+   17  kubectl describe pod testpod
+   18  kubectl exec -it testpod /bin/bash
+   19  kubectl exec -it cenpod /bin/bash
+   20  kubectl describe pod cenpod
+   21  kubectl run lalit --image=lalitvchau/demo
+   22  kubectl get pods
+   23  nano mypod.yml
+   24  kubectl apply -c mypod.yml
+   25  kubectl apply -f mypod.yml
+   26  kubectl get pods -o wide
+   27  kubectl exec mypod -it -c c1 /bin/bash
+   28  kubectl exec mypod -it -c c2 /bin/bash
+   29  kubectl get ns
+   30  kubectl create ns demons
+   31  kubectl run demopod1 --image=nginx -n demons
+   32  kubectl get ns
+   33  kubectl get pods
+   34  kubectl get pods -n demons
+   35  kubectl get pods -n kube-system
+   36  kubectl get pods -n kube-public
+   37  kubectl get pods -n kube-node-release
+   38  histoy
+   39  histort > history.txt
+   40  history > history.txt
+   41  cat history.txt 
+   42  kubectl get rs -n demons
+   43  kubectl get deployments -n demons
+   44  kubectl get pods -n demons
+   45  kubectl create deployment demodep --image=tutum/apache-php -n demons
+   46  kubectl get deployments -n demons
+   47  kubectl get rs -n demons
+   48  kubectl get pods -n demons
+   49  kuectl delete pod demopod1 -n demons
+   50  kubectl delete pod demopod1 -n demons
+   51  kubectl get pods -n demons
+   52  kubectl delete pod demodep-576f689d45-w84r9 -n demons
+   53  kubectl get pods -n demons
+   54  kubectl scale deployment demodep --replicas=10 -n demons
+   55  kubectl get pods -n demons
+   56  kubectl get rs -n demons
+   57  kubectl get pods -n demons
+   58  kubectl scale deployment demodep --replicas=100 -n demons
+   59  kubectl get pods -n demons
+   60  kubectl get rs -n demons
+   61  kubectl scale deployment demodep --replicas=2 -n demons
+   62  kubectl get rs -n demons
+   63  kubectl get pods -n demons
+   64  history > history.txt
+   65  git clone https://github.com/lalitvchau/sonarproject.git
+   66  cd sonarproject/
+   67  history > kubernet.history.txt
+   68  history > kubernet_history.txt
