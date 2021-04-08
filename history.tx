@@ -451,4 +451,3 @@
   451  git push
   452  history
   453  history > history.tx
-  454  history > history.txt
